@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap"
+      rel="stylesheet"
+    />
+    <title>Web Porto Aurel</title>
+    <style>
+      *,
+      body {
+        background-color: #6fb1b5;
+        padding: 10px 10px;
+        margin: 0;
+      }
+
+      .navbar {
+        background-color: #ffffff;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        height: 10%;
+        margin: 20px auto;
+        padding: 10px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .navbar a {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        color: #000;
+        text-decoration: none;
+        padding: 8px 20px;
+        background-color: white;
+        text-decoration: none;
+      }
+
+      .navbar i {
+        background-color: white;
+        font-size: 40px;
+      }
+
+      .data {
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+      }
+
+      .data img {
+        border-radius: 250%;
+        width: 380px;
+        height: 370px;
+      }
+
+      .data h3 {
+        font-family: "Irish Grover", system-ui;
+        font-size: 110px;
+      }
+
+      .data p {
+        font-family: "Inter", sans-serif;
+        font-size: 40px;
+        margin-top: 30px;
+      }
+
+      .pendidikan {
+        background-color: white;
+        border-radius: 50px;
+        width: 580px;
+        /* margin-top: 120px;
+        width: 50%; */
+      }
+
+      .pendidikan h3 {
+        background-color: white;
+        font-family: "Irish Grover", system-ui;
+        font-size: 50px;
+        border-radius: 50px;
+        align-items: center;
+        text-align: center;
+      }
+
+      .pendidikan p {
+        background-color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        border-radius: 50px;
+        margin-top: 30px;
+      }
+
+      .pendidikan i {
+        background-color: white;
+      }
+
+      .pengalaman {
+        background-color: white;
+        border-radius: 50px;
+        width: 580px;
+        /* margin-top: 40px;
+        width: 50%;
+        margin-left: 580px; */
+      }
+
+      .pengalaman h3 {
+        background-color: white;
+        font-family: "Irish Grover", system-ui;
+        font-size: 50px;
+        border-radius: 50px;
+        align-items: center;
+        text-align: center;
+      }
+
+      .pengalaman p {
+        background-color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        border-radius: 50px;
+        margin-top: 30px;
+        text-align: left;
+      }
+
+      .pengalaman i {
+        background-color: white;
+      }
+
+      .sekolah {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 110px;
+      }
+
+      .projek {
+        align-items: center;
+        text-align: center;
+      }
+
+      .projek h3 {
+        font-family: "Irish Grover", system-ui;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      .projek p {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        /* background-color: white;
+        border-radius: 20px;
+        margin-top: 25px;
+        width: 80%;
+        margin-left: 9%; */
+      }
+
+      .projek img {
+        width: 40%;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+      }
+
+      /* .miniminds,
+      .ulunpintar,
+      .deteksi {
+        background-color: white;
+      } */
+
+      /* .miniminds p,
+      .ulunpintar p,
+      .deteksi p {
+        text-align: center;
+      } */
+
+      .sertifikat h3 {
+        font-family: "Irish Grover", system-ui;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 30px;
+      }
+
+      .sertifikat img {
+        width: 40%;
+        margin: 0px 50px;
+      }
+
+      .kontak {
+        text-align: center;
+        margin-bottom: 200px;
+      }
+
+      .kontak h3 {
+        font-family: "Irish Grover", system-ui;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+
+      .kontak i {
+        color: black;
+        font-size: 150px;
+        gap: 250px;
+      }
+
+      @media (max-width: 800px) {
+        .navbar i {
+          font-size: 18px;
+        }
+
+        .data {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 0;
+        }
+
+        .data img {
+          width: 200px;
+          height: 200px;
+          align-items: center;
+        }
+
+        .data h3 {
+          font-size: 50px;
+        }
+
+        .data p {
+          margin-top: 0;
+          font-size: 25px;
+          background-color: wh;
+        }
+
+        .sekolah {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .pendidikan {
+          width: 380px;
+          margin-bottom: 25px;
+        }
+
+        .pengalaman {
+          background-color: white;
+          border-radius: 50px;
+          width: 380px;
+        }
+
+        .pengalaman p {
+          background-color: white;
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+          border-radius: 50px;
+          margin-top: 30px;
+          text-align: left;
+        }
+
+        .projek h3,
+        .sertifikat h3,
+        .kontak h3 {
+          margin-top: 80px;
+        }
+
+        .sertifikat,
+        .projek {
+          text-align: center;
+          grid-template-columns: repeat(2, 1fr); /* 2 kolom di mobile */
+          gap: 10px; /* Sesuaikan gap antar gambar */
+        }
+
+        .sertifikat img,
+        .projek img {
+          width: 100%; /* Agar gambar mengikuti lebar kolom */
+          margin: 0; /* Menghilangkan margin tambahan */
+        }
+
+        .kontak i {
+          color: black;
+          font-size: 50px;
+          gap: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#home" id="#home"><i class="fa-solid fa-house"></i></a>
+      <a href="#sekolah" id="#sekolah"><i class="fa-solid fa-school"></i></a>
+      <a href="#sertif" id="#sertif"><i class="fa-solid fa-file"></i></a>
+      <a href="#kontak" id="#kontak"
+        ><i class="fa-solid fa-address-book"></i
+      ></a>
+    </div>
+
+    <div class="data" id="home">
+      <img src="Foto Profil.jpeg" alt="" />
+      <div class="isi">
+        <h3>
+          Aurellia <br />
+          Az-Zahra
+        </h3>
+        <marquee behavior="" direction=""><p>Website Developer</p></marquee>
+      </div>
+    </div>
+
+    <div class="sekolah" id="sekolah">
+      <div class="pendidikan">
+        <h3>Latar Pendidikan</h3>
+        <p><i class="fa-solid fa-school"></i>SD Muhammadiyah 8 Banjarmasin</p>
+        <p><i class="fa-solid fa-school"></i>SMPN 2 Banjarmasin</p>
+        <p><i class="fa-solid fa-school"></i>SMKN 2 Banjarmasin</p>
+      </div>
+
+      <div class="pengalaman">
+        <h3>Pengalaman</h3>
+        <p>
+          <i class="fa-solid fa-building"></i>PLK (Membuat Website Belajar Anak)
+        </p>
+        <p><i class="fa-solid fa-building"></i>-</p>
+        <p><i class="fa-solid fa-building"></i>-</p>
+      </div>
+    </div>
+
+    <div class="projek" id="sertif">
+      <h3>Projek Website</h3>
+      <div class="miniminds">
+        <p>1. MiniMinds</p>
+        <img src="MiniMinds.jpeg" alt="" />
+        <img src="MiniMinds.jpeg" alt="" />
+      </div>
+      <div class="ulunpintar">
+        <p>2. UlunPintar</p>
+        <img src="MiniMinds.jpeg" alt="" />
+        <img src="MiniMinds.jpeg" alt="" />
+      </div>
+      <div class="deteksi">
+        <p>3. Deteksi Spam</p>
+        <img src="MiniMinds.jpeg" alt="" />
+        <img src="MiniMinds.jpeg" alt="" />
+      </div>
+    </div>
+
+    <div class="sertifikat">
+      <h3>Sertifikat</h3>
+      <img src="Front-end.png" alt="" />
+      <img src="Web Developer.png" alt="" />
+      <img src="Cyber.png" alt="" />
+      <!-- <br>
+      <img src="Rakit Komp.jpeg" alt=""> -->
+    </div>
+
+    <div class="kontak" id="kontak">
+      <h3>Kontak</h3>
+      <a href="https://github.com/aurelliazhr"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="https://x.com/aurelambis?t=ijBXa1oBfHrUYxZESuQIwg&s=08"
+        ><i class="fa-brands fa-x-twitter"></i
+      ></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </body>
+</html>
