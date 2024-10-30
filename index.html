@@ -223,8 +223,10 @@
         *,
         body {
           max-width: auto;
+          align-items: center;
+          padding: 0;
+          margin: 0;
         }
-        
         .navbar i {
           font-size: 18px;
         }
@@ -234,6 +236,7 @@
           flex-direction: column;
           align-items: center;
           text-align: center;
+          margin-top: 10px;
           gap: 0;
         }
 
@@ -241,6 +244,7 @@
           width: 200px;
           height: 200px;
           align-items: center;
+          margin-bottom: 10px;
         }
 
         .data h3 {
@@ -248,9 +252,8 @@
         }
 
         .data p {
-          margin-top: 0;
-          font-size: 25px;
-          background-color: wh;
+          margin-top: 5px;
+          font-size: 20px;
         }
 
         .sekolah {
@@ -258,12 +261,36 @@
           flex-direction: column;
         }
 
-        .pendidikan {
+        .pendidikan,
+        .pengalaman {
           width: 300px;
-          margin-bottom: 25px;
+          height: 300px;
+          margin-bottom: 35px;
+          margin-top: 0px;
         }
 
-        .pengalaman {
+        .pendidikan p,
+        .pengalaman p {
+        background-color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        border-radius: 50px;
+        margin-top: 30px;
+        margin-left: 20px;
+        gap: 5px;
+      }
+
+        .pendidikan h3 {
+          font-size: 40px;
+        }
+
+        .pengalaman h3 {
+          border-radius: 100px;
+          font-size: 40px;
+          margin-top: 30px;
+        }
+
+        /* .pengalaman {
           background-color: white;
           border-radius: 50px;
           width: 300px;
@@ -276,12 +303,12 @@
           border-radius: 50px;
           margin-top: 30px;
           text-align: left;
-        }
+        } */
 
         .projek h3,
         .sertifikat h3,
         .kontak h3 {
-          margin-top: 80px;
+          margin-top: 60px;
         }
 
         .sertifikat,
@@ -293,14 +320,23 @@
 
         .sertifikat img,
         .projek img {
-          width: 100%; /* Agar gambar mengikuti lebar kolom */
+          width: 90%; /* Agar gambar mengikuti lebar kolom */
           margin: 0; /* Menghilangkan margin tambahan */
+        }
+
+        .projek p {
+          margin-top: 10px;
+          margin-bottom: 10px;
         }
 
         .kontak i {
           color: black;
           font-size: 50px;
           gap: 250px;
+        }
+
+        .navbar {
+          bottom: 0px;
         }
       }
     </style>
